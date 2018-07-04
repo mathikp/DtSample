@@ -26,7 +26,10 @@ namespace WpfApplication2
         public MainWindow()
         {
             InitializeComponent();
-            dc = new Journal();
+            dc = new Journal
+            {
+                Narration = "new narration"
+            };
             myPanel.DataContext = dc;
         }
 
