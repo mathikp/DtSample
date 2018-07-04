@@ -36,16 +36,22 @@ namespace WpfApplication2
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             dc.Narration = "clicked";
+
+            //(myPanel.DataContext as Journal).Narration = "clicked";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             dc = new Journal();
+
+            //myPanel.DataContext = new Journal();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             dc.Narration = "updated";
+
+            //(myPanel.DataContext as Journal).Narration = "updated";
         }
     }
 
